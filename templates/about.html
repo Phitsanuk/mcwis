@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Malay Complex Word Identification System</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="#">MALAY COMPLEX WORD IDENTIFICATION SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto topnav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://crimsonwebs.com/s274004/mcwis/html/dashboard.php">Login/Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.333%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 55px 1px;
+  height: 100%;
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('User Manual', this, 'green')">User Manual</button>
+<button class="tablink" onclick="openPage('About', this, 'green')">About</button>
+
+<div id="Home" class="tabcontent">
+ <html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/vintage-paper1.png?raw=true");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT MALAY COMPLEX WORD IDENTIFICATION SYSTEM</span></h5>
+    <p>Greetings and welcome to Malay Complex Word Identification System. This system was established back in November of 2021 by Phitsanuk Chiranont under the supervision of Ts. Dr. Juhaida Abu Bakar.</p>
+    <p>This system intended to be use as a learning tool for anyone who are interested or in the process of learning Malay language. It will help users to identify the prefix and affix words in Malay language.</p>
+    <p>For more information about developer, please refer to contact tab. Please <a href="https://www.w3schools.com/">login</a> to use the system</p>
+
+  </div>
+</div>
+
+      <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Curious about our system? Contact us!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Kedah, Malaysia.<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 017 481 3547<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: chiranontp@gmail.com<br>
+          <a href = "mailto:chiranontp@gmail.com?subject = Feedback&body = Message">
+Send Feedback
+</a>
+      </div>
+      <div class="w3-col m6">
+      </div>
+    </div>
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">MCWIS</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+</div>
+
+<div id="User Manual" class="tabcontent">
+  <title>User Manual</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.div-1 {
+        background-color: #ABBAEA;
+    }
+
+p.big {
+  line-height: 1.8;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Image Grid</h1>
+  <p>Click on the buttons to change the grid view.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+
+    <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/l1.png?raw=true" style="width:100%">
+      <p class="big"><br><br></p>
+      <div class="div-1" style="text-align:center; font-size:30px;"> STEP 1: Access to our website via the given link. User will be redirect to this greeting page.
+      There are three tab can be interact with. Home tab represent greeting page, user manual tab and about us tab. User must click on Login/Register
+      section to login into the system.</div>
+      <p class="big"><br><br></p>
+
+      <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/l2.png?raw=true" style="width:100%">
+      <p class="big"><br><br></p>
+      <div class="div-1" style="text-align:center; font-size:30px;"> Greeting Page </div>
+      <p class="big"><br><br></p>
+
+    <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/l3.png?raw=true" style="width:100%">
+      <p class="big"><br><br></p>
+      <div class="div-1" style="text-align:center; font-size:30px;"> STEP 2: Once user click on Login/Register, user will be redirect to this dashboard page.
+          User can choose either to register new account, login or return to greeting page. </div>
+      <p class="big"><br><br></p>
+
+    <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/l4.png?raw=true" style="width:100%">
+      <p class="big"><br><br></p>
+      <div class="div-1" style="text-align:center; font-size:30px;"> STEP 3: In order to use the system, user must register into the system.
+      User must give the valid email format and password must follow the pattern (at least one uppercase, one lower case, one number and password must
+          not less than eight characters).</div>
+      <p class="big"><br><br></p>
+
+    <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/l5.png?raw=true" style="width:100%">
+      <p class="big"><br><br></p>
+      <div class="div-1" style="text-align:center; font-size:30px;"> STEP 4: After successfully registered, user must login with the registered email and password. </div>
+      <p class="big"><br><br></p>
+
+    <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/1.png?raw=true" style="width:100%">
+      <div class="div-1" style="text-align:center; font-size:30px;"> STEP 5: After successfully login user will be redirect to this page. </div>
+
+    <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/2.png?raw=true" style="width:100%">
+      <p class="big"><br><br></p>
+      <div class="div-1" style="text-align:center; font-size:30px;"> STEP 6: Copy text from any source. </div>
+      <p class="big"><br><br></p>
+
+    <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/3.png?raw=true" style="width:100%">
+      <p class="big"><br><br></p>
+      <div class="div-1" style="text-align:center; font-size:30px;"> STEP 7: Paste it inside the text box. </div>
+      <p class="big"><br><br></p>
+
+    <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/4.jpg?raw=true" style="width:100%">
+      <p class="big"><br><br></p>
+      <div class="div-1" style="text-align:center; font-size:30px;"> STEP 8: Select task. All for detecting all complex words inside the text. Noun, verb and adjective for detecting complex words associated with noun,
+            verb and adjective respectively. Altered root words for detecting the complex words that slightly change from its root word. Press submit
+            button to submit the text. </div>
+      <p class="big"><br><br></p>
+
+    <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/5.png?raw=true" style="width:100%">
+      <p class="big"><br><br></p>
+      <div class="div-1" style="text-align:center; font-size:30px;"> STEP 9: The results will be display in result field. </div>
+      <p class="big"><br><br></p>
+
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</div>
+
+<div id="About" class="tabcontent">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Below are the details of people who involved in the development of this system.</p>
+</div>
+
+<h2>Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+        <img src="https://github.com/Phitsanuk/Web-Engineering-group-/blob/main/img/me.png?raw=true" alt="Nuk" style="width:20%">
+      <div class="container">
+        <h2>Phitsanuk Chiranont</h2>
+        <p class="title">Developer</p>
+        <p>Currently study in Universiti Utara Malaysia. A final year student from Bachelor of Science with Honours (Information Technology).</p>
+          <p>Majoring: Software Engineering</p>
+        <p>Email: phitsanuk66@gmail.com</p>
+          <p>GitHub: <a href="https://github.com/Phitsanuk"> https://github.com/Phitsanuk</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Malay Complex Word Identification System</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="#">MALAY COMPLEX WORD IDENTIFICATION SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto topnav">
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:chiranontp@gmail.com?subject = Feedback&body = Message"><strong>Send Feedback</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://crimsonwebs.com/s274004/mcwis/html/dashboard.php"><strong>Logout</strong></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <style>
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.reset {background-color: #ff0000;} /* Green */
+.submit {background-color: #0029ff;} /* Blue */
+</style>
+</head>
+<body>
+<br/>
+<br/>
+<br/>
+    <div class="container">
+
+        <form method="POST" action="/process">
+            <div class="form-group">
+                    <label>Your Text</label>
+            <textarea type="text" rows="10" cols="5" class="form-control"  name="rawtext" required></textarea>
+            <br/>
+
+            <label>Select Task</label>
+            <select class="form-control" name="taskoption">
+                <option value="all">All</option>
+			  <option value="noun">Noun</option>
+			  <option value="verb">Verb</option>
+                <option value="adjective">Adjective</option>
+                <option value="compound">Compound Words</option>
+			</select>
+			<br/>
+            <button class="button reset"> Clear</button>
+            <button class="button submit"> Submit</button>
+
+        </div>
+        </form>
+    </div>
+
+<div class="container">
+    	<div class="alert alert-success" role="alert">
+        <p class="alert-heading">Your Text: </p>
+        <p >{{rawtext}}
+    	</p>
+    	</div>
+    </div>
+
+    <div class="container">
+    	<div class="alert alert-success" role="alert">
+        <p class="alert-heading">Description for option {{info}}</p>
+        <p class="alert-heading">Result for Complex Words:</p>
+        <ul class="no-bullets">{% for i in results %}
+        	<li>{{i}}</li>
+        	{%endfor %}
+    	</ul>
+    	</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
